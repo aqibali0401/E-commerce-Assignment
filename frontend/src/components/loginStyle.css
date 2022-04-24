@@ -1,0 +1,36 @@
+.container{
+    border:1px solid red;
+    height: 60vh;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.alert {
+    position: fixed;
+    top: 5px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 9999;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: .5rem 10rem;
+  }
+  .alert--success {
+    background-color: #20bf6b;
+  }
+  .alert--error {
+    background-color: #eb4d4b;
+  }
+  
+.loginEmail{
+    border:1px solid blue;
+    height: 50vh;
+    width: 50vw;
+}

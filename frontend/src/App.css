@@ -1,0 +1,116 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+a{
+  color: inherit;
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
+  color: inherit;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.margin-bottom-card {
+  margin-bottom: 3rem;
+  height: 30vh;
+  width: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+}
+
+.flexbox {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.image-container-home {
+  height: 100%;
+  width: 100%;
+}
+
+.product-card {
+  display: grid;
+}
+
+.delete-button{
+margin-left: 1rem;
+}
+
+.drop-down{
+  position: relative; 
+  display: flex;
+  justify-content: end;
+  margin-right: 100px;
+
+}
+
+/* .drop-down-child{
+  position: absolute;
+  top: 10px;
+  right: rem;
+  margin-bottom: 20px;
+
+ z-index: 5;
+} */
+.textDesc{
+  outline: none;
+  border: none;
+}
+.textDesc:focus{
+  outline: none;
+}
+.homebtn{
+  position: absolute;
+  left: 38%;
+  padding: 10px;
+  border-radius: 10px;
+  top: 40%;
+  background: whitesmoke;
+  color: black;
+  box-shadow: 2px 2px 2px 2px  ;
+  border: 1px solid white;
+  font-size: 2rem;
+  cursor: pointer;
+
+}
+.homebtn:hover{
+  color: #020b0d;
+}
