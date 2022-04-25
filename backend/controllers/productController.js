@@ -11,7 +11,10 @@ exports.registerProduct = async (req, res) => {
             product
         })
     } catch (err) {
-        console.log(err);
+        res.status(400).json({
+            success: "fail",
+            message:err
+        })
     }
 }
 
@@ -56,8 +59,8 @@ exports.getProductOne = async(req,res,next)=>{
     }
 }
 exports.updateProduct = async (req,res,next)=>{
-    console.log('work');
-    console.log(req.body.description);
+    // console.log('work');
+    // console.log(req.body.description);
     try{
         const product = await Product.findByIdAndUpdate(req.params.id, req.body.description,{
             new:true,
@@ -79,11 +82,9 @@ exports.deleteProduct = async (req, res, next) => {
         const product = await Product.findByIdAndDelete(req.params.id);
         res.status(200).json({
             status: 'success',
-            data: {
-                product
-            }
+            data: null,
         })
     } catch (err) {
-        console.log(err);
+        res.send(err);
     }
 }

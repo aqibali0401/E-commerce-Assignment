@@ -6,7 +6,7 @@ class ApiFeature{
     filter(){
         const queryObj = {...this.queryString};
         let queryStr = JSON.stringify(queryObj);
-        console.log(queryObj);
+        // console.log(queryObj);
 
         queryStr= queryStr.replace(/\b(gt|gte|lt|lte)\b/g, match => `$${match}`)
         this.query = this.query.find(JSON.parse(queryStr));
